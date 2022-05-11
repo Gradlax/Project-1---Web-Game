@@ -1,0 +1,14 @@
+Okay so here's the start of the outline. 
+Ideas: 
+Pong game - PC is actually a overhead of a guy sitting in a chair 
+Multiple Characters or Single player with scenario screens 
+
+
+Colors of player character dependent on what country each character pics 
+Countries: USA, Russia, China, Dutch, etc. 
+- check NPC characters file for a list of the countries/players 
+
+
+Will need to create a game board 
+
+
