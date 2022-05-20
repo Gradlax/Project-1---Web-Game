@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PongAlong</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- <script src="./script.js" type="module"></script> -->
+  <title>SelfPong</title>
+  <audio controls loop>
+    <source src="background-music/background.mp4" type="audio/mp3"> </audio>
 </head>
-    <body>
-        <div class="score">
-          <div id="player-score">0</div>
-          <div id="computer-score">0</div>
-        </div>
-        <div class="ball" id="ball"></div>
-        <div class="paddle left" id="player-paddle"></div>
-        <div class="paddle right" id="computer-paddle"></div>
-    </body>
 
-<footer></footer>
+<body>
+  <script type="module">
+    import {myFunction} from "./script.js";
+    window.myFunction = myFunction;
+  </script>
+  <div class="score">
+    <div id="player-score">0</div>
+    <div id="computer-score">0</div>
+
+</div>
+
+
+<span>Speed Changer</span>
+<div id="dropdown" class="speed">
+  <select name="speedChanger"  id="speedID" onchange="myFunction()">
+      <option id="slow" value=1>Slow</option>
+      <option id="medium" value=2>Faster</option>
+      <option id="fast" value=3>Faster Still</option>
+      <option id="insane" value=4>Insane</option>
+  </select> 
+  <p id="p1">Speed: </p>
+
+
+
+</div>
+<div id="color-scheme">
+    <select name="Themes" id="theme"></select>
+</div>
+    
+
+  <div class="ball" id="ball"></div>
+  <div class="paddle left" id="player-paddle"></div>
+  <div class="paddle right" id="computer-paddle"></div>
+</body>
 </html>
